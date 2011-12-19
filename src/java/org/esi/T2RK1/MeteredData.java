@@ -16,14 +16,82 @@ public class MeteredData {
     Date endDate;
     
     NetworkOwner networkOwner;
-    EntryPoint[] suppliedEnergy;
-    ExitPoint[] consumedEnergy;
+    EntryPoint suppliedEnergy;
+    ExitPoint consumedEnergy;
 
-    //To keep things simple: ExchangePoint[] exchangedEnergy;
+    //To keep things simple: ExchangePoint exchangedEnergy;
 
-    MeteredData(){
-
+    public MeteredData(){
+        this.networkOwner = new NetworkOwner();
     }
 
-    
+    /**
+     * @return the startDate
+     */
+    public Date getStartDate() {
+        return startDate;
+    }
+
+    /**
+     * @param startDate the startDate to set
+     */
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+
+    /**
+     * @return the endDate
+     */
+    public Date getEndDate() {
+        return endDate;
+    }
+
+    /**
+     * @param endDate the endDate to set
+     */
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
+    }
+
+    /**
+     * @return the networkOwner
+     */
+    public NetworkOwner getNetworkOwner() {
+        return networkOwner;
+    }
+
+    /**
+     * @param networkOwner the networkOwner to set
+     */
+    public void setNetworkOwner(NetworkOwner networkOwner) {
+        this.networkOwner = networkOwner;
+    }
+
+    /**
+     * @return the suppliedEnergy
+     */
+    public EntryPoint getSuppliedEnergy() {
+        return suppliedEnergy;
+    }
+
+    /**
+     * @param suppliedEnergy the suppliedEnergy to set
+     */
+    public void setSuppliedEnergy(EntryPoint suppliedEnergy) {
+        this.suppliedEnergy = suppliedEnergy;
+    }
+
+    /**
+     * @return the consumedEnergy
+     */
+    public ExitPoint getConsumedEnergy() {
+        return consumedEnergy;
+    }
+
+    /**
+     * @param consumedEnergy the consumedEnergy to set
+     */
+    public void setConsumedEnergy(ExitPoint consumedEnergy) {
+        this.consumedEnergy = consumedEnergy;
+    }
 }

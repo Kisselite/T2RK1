@@ -15,7 +15,7 @@ public class BalanceInvoice {
 	Integer balance;
 	Date date;
 	
-	BalanceInvoice() {
+	public BalanceInvoice() {
 		
 	}
 

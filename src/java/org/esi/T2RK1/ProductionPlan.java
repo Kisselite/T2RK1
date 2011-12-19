@@ -10,6 +10,10 @@ package org.esi.T2RK1;
  * @author Shaz
  */
 public class ProductionPlan {
-    Integer suuplierID;
+    ElectricitySupplier electricitySupplier;
     Integer plannedProduction;
+
+    public ProductionPlan(){
+        this.electricitySupplier = new ElectricitySupplier();
+    }
 }

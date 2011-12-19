@@ -5,10 +5,16 @@
 
 package org.esi.T2RK1;
 
+import java.util.Date;
+
 /**
  *
  * @author Shaz
  */
 public class QualitySeries {
+    Date date;
+    Float consumptionValue;
 
+    public QualitySeries(){
+    }
 }
